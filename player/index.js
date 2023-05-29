@@ -19,7 +19,7 @@ for (var k in interfaces)
     }
 
 app.use(express.static('frontend')) //Express stuff
-
+console.log("Dupsko")
 //Filter data. Hides from the user the location text (hex key), the terrain information and any item (dream machine component)
 //If a location hasn't been explored (status == 'U' as Unexplored) filters out the name as well
 app.post('/data', function(req, res) {
